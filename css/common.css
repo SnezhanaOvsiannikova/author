@@ -1,0 +1,83 @@
+body {
+  min-width: 320px;
+  font-family: 'OpenSansRegular', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #4e525d; }
+
+.container {
+  width: 100%;
+  position: relative; }
+
+.menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  transition: background 0.3s;
+  width: 30px;
+  margin-top: 10px; }
+  .menu:before, .menu:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0; }
+  .menu:before {
+    background: #49cbcd;
+    height: 2px;
+    top: 0; }
+  .menu:after {
+    border-bottom: 2px solid #49cbcd;
+    border-top: 2px solid #49cbcd;
+    height: 6px;
+    top: 8px; }
+  .menu:focus {
+    outline: none; }
+
+.header {
+  padding: 0 30px;
+  position: relative;
+  z-index: 1; }
+  .header .wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 30px; }
+    .header .wrapper .logo {
+      background: url(../images/logo.png) no-repeat;
+      height: 37px;
+      position: relative;
+      width: 120px; }
+      .header .wrapper .logo a {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        text-indent: -9999px;
+        width: 100%; }
+    .header .wrapper nav .navigation li {
+      border-bottom: 2px solid #8c9299; }
+      .header .wrapper nav .navigation li a {
+        text-decoration: none; }
+      .header .wrapper nav .navigation li a, .header .wrapper nav .navigation li span {
+        color: #fff;
+        padding: 10px  0;
+        display: block; }
+        .header .wrapper nav .navigation li a:hover, .header .wrapper nav .navigation li span:hover {
+          background: #49cbcd;
+          color: #484c55; }
+      .header .wrapper nav .navigation li span {
+        text-decoration: underline; }

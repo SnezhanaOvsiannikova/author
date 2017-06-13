@@ -1,0 +1,81 @@
+@import "variables.scss";
+
+@media (max-width: 959px) {
+	nav {
+		&:hover .navigation {
+			display: block;
+			position: absolute;
+			top: 100%;
+			text-align: center;
+			right: -28px;
+			left: -28px;
+			background: $darkSkyBlue;
+			margin-top: -2px;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		.navigation {
+			display: none;
+		}
+	}
+}
+@media (min-width: 960px) {
+	.header {
+		padding-left: 135px;
+		padding-right: 135px;
+		.wrapper {
+			margin-top: 0;
+			.logo {
+				margin-top: 30px;
+			}
+			nav {
+				width: 40%;
+				.navigation {
+					display: -webkit-box; 
+					display: -moz-box;
+					display: -ms-flexbox;
+					display: -webkit-flex; 
+					display: flex;
+					-ms-flex-justify-content: space-around;
+					-webkit-justify-content: space-around;
+					justify-content: space-around;
+					position: relative;
+					background: transparent;
+					font-size: 15px;
+					line-height: 19px;
+					li {
+						border: none;
+						a, span {
+							color: $gray3;
+							padding: 42px 22px 40px; 
+							&:hover {
+								background: transparent;
+							}
+						}
+						a:hover {
+							color: $mediumTurquoise;
+						}
+					}
+					.active {
+						border-bottom: 3px solid  $mediumTurquoise;
+						background: $superLightGray;
+						span {
+							text-decoration: none;
+							color: $mediumTurquoise;
+						}
+					}
+				}
+				.menu{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+		margin: 0  auto; 
+	}
+}

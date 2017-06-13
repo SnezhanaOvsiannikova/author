@@ -1,0 +1,60 @@
+@media (max-width: 959px) {
+  nav:hover .navigation {
+    display: block;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    right: -28px;
+    left: -28px;
+    background: #485460;
+    margin-top: -2px;
+    font-size: 18px;
+    line-height: 22px; }
+  nav .navigation {
+    display: none; } }
+
+@media (min-width: 960px) {
+  .header {
+    padding-left: 135px;
+    padding-right: 135px; }
+    .header .wrapper {
+      margin-top: 0; }
+      .header .wrapper .logo {
+        margin-top: 30px; }
+      .header .wrapper nav {
+        width: 40%; }
+        .header .wrapper nav .navigation {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -ms-flex-justify-content: space-around;
+          -webkit-justify-content: space-around;
+          justify-content: space-around;
+          position: relative;
+          background: transparent;
+          font-size: 15px;
+          line-height: 19px; }
+          .header .wrapper nav .navigation li {
+            border: none; }
+            .header .wrapper nav .navigation li a, .header .wrapper nav .navigation li span {
+              color: #484c55;
+              padding: 42px 22px 40px; }
+              .header .wrapper nav .navigation li a:hover, .header .wrapper nav .navigation li span:hover {
+                background: transparent; }
+            .header .wrapper nav .navigation li a:hover {
+              color: #49cbcd; }
+          .header .wrapper nav .navigation .active {
+            border-bottom: 3px solid #49cbcd;
+            background: #f8f9fb; }
+            .header .wrapper nav .navigation .active span {
+              text-decoration: none;
+              color: #49cbcd; }
+        .header .wrapper nav .menu {
+          display: none; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: 0  auto; } }

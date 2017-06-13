@@ -1,0 +1,21 @@
+{
+  "name": "author-test",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "ovsiannikova"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SnezhanaOvsiannikova/author",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.6.0"
+  }
+}
