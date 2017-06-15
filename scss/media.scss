@@ -3,6 +3,14 @@
 	.main .item-block .col-box li {
 		width: 366px;
 	}
+	.contact-form {
+		.flex-box {
+			flex-wrap: nowrap;
+		}
+		.input-holder input {
+			width: 48%;
+		}
+	}
 }
 
 
@@ -26,6 +34,7 @@
 		}
 	}
 }
+
 @media (min-width: 960px) {
 	.header {
 		.wrapper {
@@ -66,12 +75,13 @@
 					}
 					.active {
 						border-bottom: 3px solid  $mediumTurquoise;
-						background: $superLightGray;
 						&:hover span {
 							color: $mediumTurquoise;
+							background: $superLightGray; 
 						}
 						span {
 							text-decoration: none;
+							background: $superLightGray;
 							color: $mediumTurquoise;
 						}
 					}
@@ -109,8 +119,23 @@
 			flex-wrap: nowrap;
 		}
 	}
-	.learn-more {
+	.btn-line {
 		font-size: 25px;
+	}
+	.contact .flex-box  {
+		flex-wrap: nowrap;
+		.column-left {
+			width: 40%;
+		}
+		.column-right {
+			width: 48%;
+			.input-holder input {
+				margin-left: 30px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -133,5 +158,8 @@
 		li {
 			margin: 0; 
 		}
+	}
+	.contact .column-wrapper {
+		padding: 0;
 	}
 }

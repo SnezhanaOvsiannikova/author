@@ -1,6 +1,10 @@
 @media (min-width: 450px) {
   .main .item-block .col-box li {
-    width: 366px; } }
+    width: 366px; }
+  .contact-form .flex-box {
+    flex-wrap: nowrap; }
+  .contact-form .input-holder input {
+    width: 48%; } }
 
 @media (max-width: 959px) {
   nav {
@@ -50,12 +54,13 @@
         .header .wrapper nav .navigation li a:hover {
           color: #49cbcd; }
       .header .wrapper nav .navigation .active {
-        border-bottom: 3px solid #49cbcd;
-        background: #f8f9fb; }
+        border-bottom: 3px solid #49cbcd; }
         .header .wrapper nav .navigation .active:hover span {
-          color: #49cbcd; }
+          color: #49cbcd;
+          background: #f8f9fb; }
         .header .wrapper nav .navigation .active span {
           text-decoration: none;
+          background: #f8f9fb;
           color: #49cbcd; }
     .header .wrapper nav .menu {
       display: none; }
@@ -76,8 +81,18 @@
     -webkit-flex-wrap: nowrap;
     -o-flex-wrap: nowrap;
     flex-wrap: nowrap; }
-  .learn-more {
-    font-size: 25px; } }
+  .btn-line {
+    font-size: 25px; }
+  .contact .flex-box {
+    flex-wrap: nowrap; }
+    .contact .flex-box .column-left {
+      width: 40%; }
+    .contact .flex-box .column-right {
+      width: 48%; }
+      .contact .flex-box .column-right .input-holder input {
+        margin-left: 30px; }
+        .contact .flex-box .column-right .input-holder input:first-child {
+          margin-left: 0; } }
 
 @media (min-width: 1200px) {
   .container {
@@ -94,4 +109,6 @@
     -o-flex-wrap: nowrap;
     flex-wrap: nowrap; }
     .main .item-block .col-box li {
-      margin: 0; } }
+      margin: 0; }
+  .contact .column-wrapper {
+    padding: 0; } }

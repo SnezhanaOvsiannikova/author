@@ -48,7 +48,7 @@ h3 {
     padding: 0;
     position: relative; }
 
-.learn-more {
+.btn-line {
   -icab-border-radius: 5px;
   -khtml-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -63,27 +63,39 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px; }
-  .learn-more:hover {
+  .btn-line:hover {
     color: #4e525d; }
 
-.byu-btn {
-  background: #788492;
+.btn {
   color: #fff;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 8px 50px;
   -icab-border-radius: 3px;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: none; }
 
-.byu-btn.active,
-.heading-bnt.active {
+.btn.btn-green {
+  background: #49cbcd;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 12px 58px;
+  margin-bottom: 10px; }
+  .btn.btn-green:hover {
+    color: #4e525d; }
+
+.btn.btn-gray {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 50px;
+  background: #788492; }
+
+.btn.btn-gray.active,
+.heading-btn.active {
   background: #49cbcd; }
 
 .menu {
@@ -123,10 +135,10 @@ h3 {
   height: auto;
   padding: 96px 0 88px; }
   .contact .column-wrapper {
-    position: relative; }
+    position: relative;
+    padding: 0px 30px; }
     .contact .column-wrapper .column-left {
-      position: relative;
-      width: 40%; }
+      position: relative; }
       .contact .column-wrapper .column-left h4 {
         font-size: 24px;
         line-height: 28px;
@@ -136,8 +148,11 @@ h3 {
         color: rgba(240, 240, 240, 0.5);
         margin-bottom: 40px;
         line-height: 20px; }
-    .contact .column-wrapper .column-right {
-      width: 48%; }
+    .contact .column-wrapper .column-right,
+    .contact .column-wrapper .column-left {
+      width: 100%; }
+  .contact .flex-box {
+    flex-wrap: wrap; }
   .contact .wrapp-heading {
     margin-bottom: 106px; }
 
@@ -146,14 +161,11 @@ h3 {
   box-sizing: border-box; }
   .contact-form .input-holder {
     position: relative; }
-    .contact-form .input-holder .input-email,
-    .contact-form .input-holder .input-name {
-      width: 48%; }
     .contact-form .input-holder input {
-      margin-left: 30px; }
-      .contact-form .input-holder input:first-child {
-        margin-left: 0; }
-  .contact-form .input-holder,
+      width: 100%; }
+  .contact-form .flex-box {
+    flex-wrap: wrap; }
+  .contact-form .input-holder input,
   .contact-form textarea {
     margin-bottom: 30px; }
   .contact-form .input-email,
@@ -292,15 +304,17 @@ h3 {
       border-bottom: 2px solid #8c9299; }
       .header .wrapper nav .navigation li a {
         text-decoration: none; }
+        .header .wrapper nav .navigation li a:hover {
+          background: #49cbcd;
+          color: #484c55; }
       .header .wrapper nav .navigation li a, .header .wrapper nav .navigation li span {
         color: #fff;
         display: block;
         padding: 10px  0; }
-        .header .wrapper nav .navigation li a:hover, .header .wrapper nav .navigation li span:hover {
-          background: #49cbcd;
-          color: #484c55; }
       .header .wrapper nav .navigation li span {
-        text-decoration: underline; }
+        text-decoration: underline;
+        background: #49cbcd;
+        color: #484c55; }
 
 .main {
   position: relative;

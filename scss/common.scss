@@ -56,7 +56,7 @@ h3 {
 		position: relative;
 	}
 }
-.learn-more {
+.btn-line {
 	-icab-border-radius: 5px;
 	-khtml-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -75,14 +75,9 @@ h3 {
     	color: $darkGray;
     }
 }
-.byu-btn {
-	background: $lightSkyBlue;
+
+.btn {
 	color: $white1;
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 600;
-	text-decoration: none;
-	padding: 8px 50px;
 	-icab-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -90,9 +85,28 @@ h3 {
 	-o-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+	border: none; 
 }
-.byu-btn.active,
-.heading-bnt.active {
+.btn.btn-green {
+	background: $mediumTurquoise;
+	font-size: 22px;
+	line-height: 26px;
+	padding: 12px 58px;
+	margin-bottom: 10px;
+	&:hover {
+		color: $darkGray;
+	}
+}
+.btn.btn-gray {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 8px 50px;
+	background: $lightSkyBlue;
+}
+.btn.btn-gray.active,
+.heading-btn.active {
 	background: $mediumTurquoise;
 }
 .menu {
@@ -138,9 +152,9 @@ h3 {
 	padding: 96px 0 88px;
 	.column-wrapper {
 		position: relative;
+		padding: 0px 30px;
 		.column-left {
 			position: relative;
-			width: 40%;
 			h4 {
 				font-size: 24px;
 				line-height: 28px;
@@ -153,9 +167,13 @@ h3 {
 				line-height: 20px; 
 			}
 		}
-		.column-right {
-			width: 48%;
+		.column-right,
+		.column-left {
+			width: 100%;
 		}
+	}
+	.flex-box {
+		flex-wrap: wrap;
 	}
 	.wrapp-heading {
 		margin-bottom: 106px;
@@ -166,18 +184,14 @@ h3 {
 	box-sizing: border-box;
 	.input-holder {
 		position: relative;
-		.input-email,
-		.input-name {
-			width: 48%;
-		}
 		input {
-			margin-left: 30px;
-			&:first-child {
-				margin-left: 0;
-			}
+			width: 100%;
 		}
 	}
-	.input-holder,
+	.flex-box {
+		flex-wrap: wrap;
+	}
+	.input-holder input,
 	textarea {
 		margin-bottom: 30px;
 	}
@@ -335,18 +349,20 @@ h3 {
 					border-bottom: 2px solid $gray1;
 					a {
 						text-decoration: none;
-					}
-					a, span {
-						color: $white1;
-						display: block;
-						padding: 10px  0;
 						&:hover {
 							background: $mediumTurquoise;
 							color:  $gray3;
 						}
 					}
+					a, span {
+						color: $white1;
+						display: block;
+						padding: 10px  0;
+					}
 					span {
 						text-decoration: underline;
+						background: $mediumTurquoise;
+						color:  $gray3;
 					}
 				}
 			}
