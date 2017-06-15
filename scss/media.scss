@@ -1,7 +1,14 @@
 @import "variables.scss";
+@media (min-width: 450px) {
+	.main .item-block .col-box li {
+		width: 366px;
+	}
+}
+
 
 @media (max-width: 959px) {
 	nav {
+		margin-top: 12px;
 		&:hover .navigation {
 			display: block;
 			position: absolute;
@@ -21,15 +28,12 @@
 }
 @media (min-width: 960px) {
 	.header {
-		padding-left: 135px;
-		padding-right: 135px;
 		.wrapper {
-			margin-top: 0;
+			margin: 0;
 			.logo {
-				margin-top: 30px;
+				margin-top: 34px;
 			}
 			nav {
-				width: 40%;
 				.navigation {
 					display: -webkit-box; 
 					display: -moz-box;
@@ -45,9 +49,13 @@
 					line-height: 19px;
 					li {
 						border: none;
+						margin-left: 10px;
+						&:first-child {
+							margin-left: 0;
+						}
 						a, span {
 							color: $gray3;
-							padding: 42px 22px 40px; 
+							padding: 40px 22px; 
 							&:hover {
 								background: transparent;
 							}
@@ -59,6 +67,9 @@
 					.active {
 						border-bottom: 3px solid  $mediumTurquoise;
 						background: $superLightGray;
+						&:hover span {
+							color: $mediumTurquoise;
+						}
 						span {
 							text-decoration: none;
 							color: $mediumTurquoise;
@@ -71,11 +82,56 @@
 			}
 		}
 	}
+	.main {
+		.banner {
+			.left,
+			.right {
+				display: inline-block;
+			}
+			.info-block {
+				h2 {
+					font-size: 65px;
+					line-height: 68px;
+				}
+				p {
+					font-size: 24px;
+					line-height: 35px;
+				}
+			}
+		}
+		.team .co-workers {
+			-ms-flex-justify-content: space-between;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+			-ms-flex-wrap: nowrap;
+			-webkit-flex-wrap: nowrap;
+			-o-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+		}
+	}
+	.learn-more {
+		font-size: 25px;
+	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 		width: 1170px;
 		margin: 0  auto; 
+	}
+	.header {
+		padding: 0;
+	}
+	.main .item-block .col-box {
+		-ms-flex-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-ms-flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-o-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		li {
+			margin: 0; 
+		}
 	}
 }

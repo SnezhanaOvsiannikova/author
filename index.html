@@ -14,7 +14,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="wrapper">
+			<div class="wrapper flex-box">
 				<h1 class="logo"><a href="#">Logo</a></h1>
 				<nav>
 					<button class="menu"></button>
@@ -41,13 +41,147 @@
 				</nav>                                                                      
 			</div>
 		</div>
-	</header> 
-		
-	</div>
+	</header>
 	<div class="main">
-		<div class="container">
-			
+		<div class="banner">
+			<div id="slider">
+				<div class="slide">
+	                <img src="images/banner-img.jpg" alt="" class="img-scale">				
+				</div>
+				<div class="slide">
+	                <img src="images/banner-img.jpg" alt="" class="img-scale">				
+				</div>
+				<div class="slide">
+	                <img src="images/banner-img.jpg" alt="" class="img-scale">				
+				</div>
+			</div>
+			<div class="info-block">
+				<h2>This is a main heading</h2>
+				<p>Lorem ipsum  is simply dummy text <br>of the printing</p>
+				<a href="#" class="learn-more">Learn More</a>
+			</div>
+			<button class="left"></button>
+			<button class="right"></button>
 		</div>
+		<div class="container">
+			<section class="team">
+				<div class="wrapp-heading">
+					<h3>The Team</h3>
+				</div>
+				<ul class="co-workers">
+					<li>
+						<div class="img-holder"><img src="images/ava-1.png" alt=""></div>
+						<h4>Adrian Thomas</h4>
+						<span>CEO &amp; Founder</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</li>
+					<li>
+						<div class="img-holder"><img src="images/ava-2.png" alt=""></div>
+						<h4>Narate Ketram</h4>
+						<span>Creative Director</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</li>
+					<li>
+						<div class="img-holder"><img src="images/ava-3.png" alt=""></div>
+						<h4>Fernando Comet</h4>
+						<span>CEO &amp; Founder</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</li>
+					<li>
+						<div class="img-holder"><img src="images/ava-4.png" alt=""></div>
+						<h4>Adedayo saheed</h4>
+						<span>Creative Directorr</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="item-block">
+			<div class="container">
+				<ul class="col-box">
+					<li>
+						<div class="heading-bnt">Basic</div>
+						<span class="cost">$5.01/ Month</span>
+						<ul class="list">
+							<li>Lorem ipsum </li>
+							<li>Dolor sit amet, consect</li>
+							<li>Adipiscing elit</li>
+							<li>Proin commodo turpis</li>
+							<li>lacus pulvinarvel </li>
+							<li>Prnare nisi pretium.</li>
+						</ul>
+						<div class="btn-wrapp">
+							<a href="#" class="byu-btn">Buy now</a>
+						</div>
+					</li>
+					<li>
+						<div class="heading-bnt">Pro</div>
+						<span class="cost">$10.01/ Month</span>
+						<ul class="list">
+							<li>Lorem ipsum </li>
+							<li>Dolor sit amet, consect</li>
+							<li>Adipiscing elit</li>
+							<li>Proin commodo turpis</li>
+							<li>lacus pulvinarvel </li>
+							<li>Prnare nisi pretium.</li>
+						</ul>
+						<div class="btn-wrapp">
+							<a href="#" class="byu-btn">Buy now</a>
+						</div>
+					</li>
+					<li>
+						<div class="heading-bnt">Premium</div>
+						<span class="cost">$20.01/ Month</span>
+						<ul class="list">
+							<li>Lorem ipsum </li>
+							<li>Dolor sit amet, consect</li>
+							<li>Adipiscing elit</li>
+							<li>Proin commodo turpis</li>
+							<li>lacus pulvinarvel </li>
+							<li>Prnare nisi pretium.</li>
+						</ul>
+						<div class="btn-wrapp">
+							<a href="#" class="byu-btn">Buy now</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<section class="contact">
+			<div class="container">
+				<div class="wrapp-heading">
+					<h3 class="heading-white">Contact Us</h3>
+				</div>
+				<div class="column-wrapper flex-box">
+					<div class="column-left">
+						<h4>Get in touch with us</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+						<ul class="social">
+							<li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li class="google-plus"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></i></a></li>
+						</ul>
+						<address class="address">
+							Posted by <a href="#">Dospel &amp; GanjaParker</a>
+							<br>+XX-XXXX - XXXX - XX</span>
+							<br>info@mail.com
+						</address>
+					</div>
+					<div class="column-right">
+						<form class="contact-form">
+							<div class="input-holder flex-box">
+								<input type="text" name="user-name" class="input-name" placeholder="Name" required="required">
+								<input type="email" name="email" class="input-email" placeholder="Email" required="required"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+							</div>
+							<textarea placeholder="Message" id="comments" oninput="validateCommentsFunc(this)"></textarea>
+							<div class="btn-holder">
+								<button type="submit" class="btn">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
