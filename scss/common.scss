@@ -32,14 +32,16 @@ h3 {
 	.slick-slide {
 		float: left;
 		height: 100%;
-		min-height: 1px;
 		position: relative;
 		img {
 			display: block;
 			height: 100% !important;
 			max-width: none;
-			position: static !important;
-			width: 100%;
+			position: relative !important;
+			width: auto;
+			transform: translate3d(0, 0, 0);
+			left: 50%;
+			top: 0;
 		}
 	}
 	.slick-track {
@@ -47,6 +49,7 @@ h3 {
 		left: 0;
 		position: relative;
 		top: 0;
+		height: 100%;
 	}
 	.slick-list {
 		display: block;
@@ -54,6 +57,7 @@ h3 {
 		overflow: hidden;
 		padding: 0;
 		position: relative;
+		height: 100%;
 	}
 }
 .btn-line {
@@ -75,7 +79,6 @@ h3 {
     	color: $darkGray;
     }
 }
-
 .btn {
 	color: $white1;
 	-icab-border-radius: 3px;
@@ -104,9 +107,10 @@ h3 {
 	text-decoration: none;
 	padding: 8px 50px;
 	background: $lightSkyBlue;
+	transition: background 0.3s;
 }
-.btn.btn-gray.active,
-.heading-btn.active {
+.highlight-box.active .btn-gray,
+.highlight-box.active .heading {
 	background: $mediumTurquoise;
 }
 .menu {
@@ -321,6 +325,77 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 }
+.col-box {
+	position: relative;
+	-ms-flex-justify-content: center;
+	-webkit-justify-content: center;
+	box-sizing: border-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box; 
+	display: -webkit-flex; 
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	li {
+		width: 100%;
+		.heading {
+			font-size: 26px;
+			line-height: 30px;
+			padding: 24px 0 22px;
+			color: $white1;
+			background: $darkSkyBlue;
+			-ms-border-top-left-radius: 2px;
+			-ms-border-top-right-radius: 2px;
+			-webkit-border-top-right-radius: 2px;
+			-webkit-border-top-left-radius: 2px;
+			-ms-border-top-left-radius: 2px;
+			-ms-border-top-right-radius: 2px;
+			-o-border-top-left-radius: 2px;
+			-o-border-top-right-radius: 2px;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			-webkit-box-shadow: 0px 1px 1px 0px rgba(236,240,241,1);
+			-moz-box-shadow: 0px 1px 1px 0px rgba(236,240,241,1);
+			box-shadow: 0px 1px 1px 0px rgba(236,240,241,1); 
+			transition: background 0.3s;
+		}
+		.cost {
+			display: block;
+			padding: 26px 0 18px;
+			color: $darkSkyBlue;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.cost, 
+		.list li {
+			border-bottom: 1px solid $lightGray2;
+		}
+		.list {
+			position: relative;
+			background: $white1;
+			color: $gray1;
+			li {
+				padding: 15px 0 12px;
+			}
+		}
+		.btn-wrapp {
+			position: relative;
+			padding: 38px 0;
+		}
+		.btn-wrapp, .cost {
+			background: $superLightGray;
+		}
+	}
+	&>li {
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+}
 //START HEADER
 .header {
 	padding: 0 30px;
@@ -517,76 +592,6 @@ h3 {
 		padding: 118px 20px 100px;
 		background: $white2;
 		overflow: hidden;
-		.col-box {
-			position: relative;
-			-ms-flex-justify-content: center;
-			-webkit-justify-content: center;
-			box-sizing: border-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -webkit-box; 
-			display: -webkit-flex; 
-			-ms-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-o-flex-wrap: wrap;
-			flex-wrap: wrap;
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			li {
-				width: 100%;
-				.heading-bnt {
-					font-size: 26px;
-					line-height: 30px;
-					padding: 24px 0 22px;
-					color: $white1;
-					background: $darkSkyBlue;
-					-ms-border-top-left-radius: 2px;
-					-ms-border-top-right-radius: 2px;
-					-webkit-border-top-right-radius: 2px;
-					-webkit-border-top-left-radius: 2px;
-					-ms-border-top-left-radius: 2px;
-					-ms-border-top-right-radius: 2px;
-					-o-border-top-left-radius: 2px;
-					-o-border-top-right-radius: 2px;
-					border-top-left-radius: 2px;
-					border-top-right-radius: 2px;
-					-webkit-box-shadow: 0px 1px 1px 0px rgba(236,240,241,1);
-					-moz-box-shadow: 0px 1px 1px 0px rgba(236,240,241,1);
-					box-shadow: 0px 1px 1px 0px rgba(236,240,241,1); 
-				}
-				.cost {
-					display: block;
-					padding: 26px 0 18px;
-					color: $darkSkyBlue;
-					font-size: 20px;
-					line-height: 24px;
-				}
-				.cost, 
-				.list li {
-					border-bottom: 1px solid $lightGray2;
-				}
-				.list {
-					position: relative;
-					background: $white1;
-					color: $gray1;
-					li {
-						padding: 15px 0 12px;
-					}
-				}
-				.btn-wrapp {
-					position: relative;
-					padding: 38px 0;
-				}
-				.btn-wrapp, .cost {
-					background: $superLightGray;
-				}
-			}
-			&>li {
-				margin-bottom: 20px;
-				margin-right: 20px;
-			}
-		}
 	}
 }
 //END MAIN

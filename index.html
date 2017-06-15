@@ -29,13 +29,13 @@
 							<a href="#">Portfolio</a>
 						</li>
 						<li>
-							<a href="#">Team</a>
+							<a href="#team-block" class="scroll-to">Team</a>
 						</li>
 						<li>
 							<a href="#">Blog</a>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a href="#contact-block" class="scroll-to">Contact</a>
 						</li>
 					</ul>
 				</nav>                                                                      
@@ -64,7 +64,7 @@
 			<button class="right"></button>
 		</div>
 		<div class="container">
-			<section class="team">
+			<section class="team" id="team-block">
 				<div class="wrapp-heading">
 					<h3>The Team</h3>
 				</div>
@@ -99,8 +99,8 @@
 		<div class="item-block">
 			<div class="container">
 				<ul class="col-box">
-					<li>
-						<div class="heading-bnt">Basic</div>
+					<li class="highlight-box">
+						<div class="heading">Basic</div>
 						<span class="cost">$5.01/ Month</span>
 						<ul class="list">
 							<li>Lorem ipsum </li>
@@ -114,8 +114,8 @@
 							<a href="#" class="btn btn-gray">Buy now</a>
 						</div>
 					</li>
-					<li>
-						<div class="heading-bnt">Pro</div>
+					<li class="highlight-box">
+						<div class="heading">Pro</div>
 						<span class="cost">$10.01/ Month</span>
 						<ul class="list">
 							<li>Lorem ipsum </li>
@@ -129,8 +129,8 @@
 							<a href="#" class="btn btn-gray">Buy now</a>
 						</div>
 					</li>
-					<li>
-						<div class="heading-bnt">Premium</div>
+					<li class="highlight-box">
+						<div class="heading">Premium</div>
 						<span class="cost">$20.01/ Month</span>
 						<ul class="list">
 							<li>Lorem ipsum </li>
@@ -147,7 +147,7 @@
 				</ul>
 			</div>
 		</div>
-		<section class="contact">
+		<section class="contact" id="contact-block">
 			<div class="container">
 				<div class="wrapp-heading">
 					<h3 class="heading-white">Contact Us</h3>
@@ -159,11 +159,11 @@
 						<ul class="social">
 							<li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 							<li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li class="google-plus"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></i></a></li>
+							<li class="google-plus"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 						</ul>
 						<address class="address">
 							Posted by <a href="#">Dospel &amp; GanjaParker</a>
-							<br>+XX-XXXX - XXXX - XX</span>
+							<br>+XX-XXXX - XXXX - XX
 							<br>info@mail.com
 						</address>
 					</div>
@@ -173,7 +173,7 @@
 								<input type="text" name="user-name" class="input-name" placeholder="Name" required="required">
 								<input type="email" name="email" class="input-email" placeholder="Email" required="required"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
 							</div>
-							<textarea placeholder="Message" id="comments" oninput="validateCommentsFunc(this)" required="required"></textarea>
+							<textarea placeholder="Message" id="comments" maxlength="300" minlength="10" required="required"></textarea>
 							<div class="btn-holder">
 								<button type="submit" class="btn btn-green">Send</button>
 							</div>

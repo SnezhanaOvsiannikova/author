@@ -15,13 +15,41 @@ $(document).ready(function(){
 		rescaleOnResize: true,
 		align: 'center'
 	});
-});
-function validateCommentsFunc(textarea) {
-	 if (textarea.value.length < 20) {
-	  textarea.setCustomValidity("Give a more detailed answer, please...");   
-   }
-   else {
-	  textarea.setCustomValidity("");
-   }
+	$('#active-elem').hover(
+        function(){ 
+            $(this).find('.btn-gray').toggleClass('.active');
+        }
+    );
 
-}
+	(function () {
+		var activeElem = $('.highlight-box .btn-gray');
+		
+		activeElem.on('mouseenter', function() {
+			var parentElem = $(this).closest('.highlight-box');
+
+			parentElem.addClass('active');
+
+			$(this).one('mouseleave', function() {
+				parentElem.removeClass('active');
+			});
+		});
+	}());
+	$('a[href^="#"]').click(function(e){
+        var hash = $(this).attr('href');
+        var target;
+
+        e.preventDefault();
+
+        if (hash === '#') { return; }
+
+    	target = $(hash);
+ 
+        history.pushState('', document.title, window.location.pathname);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1500, function(){
+            //window.location.hash = hash;
+    	});
+	});
+});
+

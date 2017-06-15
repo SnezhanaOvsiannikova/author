@@ -1,6 +1,6 @@
 @import "variables.scss";
 @media (min-width: 450px) {
-	.main .item-block .col-box li {
+	.col-box li {
 		width: 366px;
 	}
 	.contact-form {
@@ -31,6 +31,12 @@
 		}
 		.navigation {
 			display: none;
+		}
+	}
+	.banner {
+		.left,
+		.right {
+			display: none !important; 
 		}
 	}
 }
@@ -96,7 +102,7 @@
 		.banner {
 			.left,
 			.right {
-				display: inline-block;
+				display: inline-block !important;
 			}
 			.info-block {
 				h2 {
@@ -147,7 +153,7 @@
 	.header {
 		padding: 0;
 	}
-	.main .item-block .col-box {
+	.col-box {
 		-ms-flex-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
