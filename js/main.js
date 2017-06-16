@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	var slider = $('#slider');
+	slider.on('init', function() {
+		$('.img-scale').imageScale({
+			rescaleOnResize: true,
+			align: 'center'
+		});	
+	});
 	slider.slick({
 		cssEase: 'linear',
 		dots: false,
@@ -12,12 +18,7 @@ $(document).ready(function(){
 		nextArrow: $('.banner button.right'),
 		prevArrow: $('.banner button.left'),
 	});
-	slider.on('init', function() {
-		$('.img-scale').imageScale({
-			rescaleOnResize: true,
-			align: 'center'
-		});	
-	});
+
   	
 	$('#active-elem').hover(
         function(){ 
@@ -71,5 +72,3 @@ $(document).ready(function(){
 
 	}());
 });
-
-
