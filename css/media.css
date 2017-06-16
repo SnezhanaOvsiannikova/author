@@ -12,11 +12,11 @@
     nav:hover .navigation {
       display: block;
       position: absolute;
+      background: #fff;
       top: 100%;
       text-align: center;
       right: -28px;
       left: -28px;
-      background: #485460;
       margin-top: -2px;
       font-size: 18px;
       line-height: 22px; }
@@ -44,6 +44,18 @@
       background: transparent;
       font-size: 15px;
       line-height: 19px; }
+      .header .wrapper nav .navigation.fixed-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: rgba(73, 203, 205, 0.9); }
+        .header .wrapper nav .navigation.fixed-menu li a:hover {
+          color: #fff; }
+        .header .wrapper nav .navigation.fixed-menu .active {
+          border-bottom: 3px solid #484c55; }
+          .header .wrapper nav .navigation.fixed-menu .active:hover a {
+            color: #49cbcd; }
       .header .wrapper nav .navigation li {
         border: none;
         margin-left: 10px; }

@@ -424,36 +424,22 @@ h3 {
 					border-bottom: 2px solid $gray1;
 					a {
 						text-decoration: none;
-						color: $white1;
+						color: $gray3;
 						display: block;
 						padding: 10px 0;
 						&:hover {
-							background: $mediumTurquoise;
-							color:  $gray3;
+							color:  $mediumTurquoise;
 						}
 					}
 				}
 				.active a {
-					text-decoration: underline;
-					background: $mediumTurquoise;
-					color:  $gray3;
-					cursor: default;
-				}
-				&.fixed-menu {
-					position: fixed;
-					top: 0;
-				    right: 0;
-				    left: 0;
-				    background: rgba(73, 203, 205, .9);
-				    li a:hover {
-				    	color: $white1;
-				    }
-				    .active {
-				    	border-bottom: 3px solid $gray3;
-				    	&:hover a { 
-							color: $mediumTurquoise;
-				    	}
-				    }
+					text-decoration: none;
+					background: #f8f9fb;
+					color: #49cbcd;
+    				cursor: default;
+					&:hover {
+						color:  $gray3;
+					}
 				}
 			}
 		}

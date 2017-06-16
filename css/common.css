@@ -371,29 +371,18 @@ h3 {
       border-bottom: 2px solid #8c9299; }
       .header .wrapper nav .navigation li a {
         text-decoration: none;
-        color: #fff;
+        color: #484c55;
         display: block;
         padding: 10px 0; }
         .header .wrapper nav .navigation li a:hover {
-          background: #49cbcd;
-          color: #484c55; }
-    .header .wrapper nav .navigation .active a {
-      text-decoration: underline;
-      background: #49cbcd;
-      color: #484c55;
-      cursor: default; }
-    .header .wrapper nav .navigation.fixed-menu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      background: rgba(73, 203, 205, 0.9); }
-      .header .wrapper nav .navigation.fixed-menu li a:hover {
-        color: #fff; }
-      .header .wrapper nav .navigation.fixed-menu .active {
-        border-bottom: 3px solid #484c55; }
-        .header .wrapper nav .navigation.fixed-menu .active:hover a {
           color: #49cbcd; }
+    .header .wrapper nav .navigation .active a {
+      text-decoration: none;
+      background: #f8f9fb;
+      color: #49cbcd;
+      cursor: default; }
+      .header .wrapper nav .navigation .active a:hover {
+        color: #484c55; }
 
 .main {
   position: relative;
