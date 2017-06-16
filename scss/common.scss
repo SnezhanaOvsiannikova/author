@@ -446,9 +446,12 @@ h3 {
 				    right: 0;
 				    left: 0;
 				    background: rgba(73, 203, 205, .9);
-				    & li a:hover {
+				    li a:hover {
 				    	color: $white1;
-				    } 
+				    }
+				    .active {
+				    	border-bottom: 3px solid $gray3;
+				    }
 				}
 			}
 		}

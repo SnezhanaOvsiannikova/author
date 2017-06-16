@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	var slider = $('#slider');
 	slider.on('init', function() {
-		$('.img-scale').imageScale({
-			rescaleOnResize: true,
-			align: 'center'
-		});	
+		setTimeout(function() {
+			$('.img-scale').imageScale({
+				rescaleOnResize: true,
+				align: 'center'
+			});
+		}, 100);
 	});
 	slider.slick({
 		cssEase: 'linear',
