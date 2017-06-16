@@ -377,10 +377,10 @@ h3 {
         .header .wrapper nav .navigation li a:hover {
           background: #49cbcd;
           color: #484c55; }
-      .header .wrapper nav .navigation li span {
-        text-decoration: underline;
-        background: #49cbcd;
-        color: #484c55; }
+    .header .wrapper nav .navigation .active a {
+      text-decoration: underline;
+      background: #49cbcd;
+      color: #484c55; }
     .header .wrapper nav .navigation.fixed-menu {
       position: fixed;
       top: 0;

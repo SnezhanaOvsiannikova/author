@@ -49,19 +49,18 @@
         margin-left: 10px; }
         .header .wrapper nav .navigation li:first-child {
           margin-left: 0; }
-        .header .wrapper nav .navigation li a, .header .wrapper nav .navigation li span {
+        .header .wrapper nav .navigation li a {
           color: #484c55;
           padding: 40px 22px; }
-          .header .wrapper nav .navigation li a:hover, .header .wrapper nav .navigation li span:hover {
-            background: transparent; }
-        .header .wrapper nav .navigation li a:hover {
-          color: #49cbcd; }
+          .header .wrapper nav .navigation li a:hover {
+            background: transparent;
+            color: #49cbcd; }
       .header .wrapper nav .navigation .active {
         border-bottom: 3px solid #49cbcd; }
-        .header .wrapper nav .navigation .active:hover span {
+        .header .wrapper nav .navigation .active:hover a {
           color: #49cbcd;
           background: #f8f9fb; }
-        .header .wrapper nav .navigation .active span {
+        .header .wrapper nav .navigation .active a {
           text-decoration: none;
           background: #f8f9fb;
           color: #49cbcd; }

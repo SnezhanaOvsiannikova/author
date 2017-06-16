@@ -432,14 +432,11 @@ h3 {
 							color:  $gray3;
 						}
 					}
-					span {
-						text-decoration: underline;
-						background: $mediumTurquoise;
-						color:  $gray3;
-					}
 				}
 				.active a {
-					
+					text-decoration: underline;
+					background: $mediumTurquoise;
+					color:  $gray3;
 				}
 				&.fixed-menu {
 					position: fixed;

@@ -68,24 +68,22 @@
 						&:first-child {
 							margin-left: 0;
 						}
-						a, span {
+						a {
 							color: $gray3;
 							padding: 40px 22px; 
 							&:hover {
 								background: transparent;
+								color: $mediumTurquoise;
 							}
-						}
-						a:hover {
-							color: $mediumTurquoise;
 						}
 					}
 					.active {
 						border-bottom: 3px solid  $mediumTurquoise;
-						&:hover span {
+						&:hover a {
 							color: $mediumTurquoise;
 							background: $superLightGray; 
 						}
-						span {
+						a {
 							text-decoration: none;
 							background: $superLightGray;
 							color: $mediumTurquoise;
