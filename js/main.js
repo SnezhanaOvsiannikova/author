@@ -40,13 +40,15 @@ $(document).ready(function(){
 		});
 	}());
 	$('a[href^="#"]').click(function(e){
-        var hash = $(this).attr('href');
+		var jThis = $(this); 
+        var hash = jThis.attr('href');
         var target;
 
         e.preventDefault();
 
         if (hash === '#') { return; }
 
+        jThis.addClass('active');
     	target = $(hash);
  
         history.pushState('', document.title, window.location.pathname);
@@ -72,3 +74,5 @@ $(document).ready(function(){
 
 	}());
 });
+
+
