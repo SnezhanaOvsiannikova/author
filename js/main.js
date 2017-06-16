@@ -47,13 +47,14 @@ $(document).ready(function(){
 		var jThis = $(this); 
         var hash = jThis.attr('href');
         var target;
+        var navElems = $('.navigation li')
 
         e.preventDefault();
 
         if (hash === '#') { return; }
 
-        anchors.removeClass('active');
-        jThis.addClass('active');
+        navElems.removeClass('active');
+        jThis.closest('li').addClass('active');
     	target = $(hash);
  
         history.pushState('', document.title, window.location.pathname);

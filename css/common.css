@@ -380,7 +380,8 @@ h3 {
     .header .wrapper nav .navigation .active a {
       text-decoration: underline;
       background: #49cbcd;
-      color: #484c55; }
+      color: #484c55;
+      cursor: default; }
     .header .wrapper nav .navigation.fixed-menu {
       position: fixed;
       top: 0;
@@ -391,6 +392,8 @@ h3 {
         color: #fff; }
       .header .wrapper nav .navigation.fixed-menu .active {
         border-bottom: 3px solid #484c55; }
+        .header .wrapper nav .navigation.fixed-menu .active:hover a {
+          color: #49cbcd; }
 
 .main {
   position: relative;

@@ -437,6 +437,7 @@ h3 {
 					text-decoration: underline;
 					background: $mediumTurquoise;
 					color:  $gray3;
+					cursor: default;
 				}
 				&.fixed-menu {
 					position: fixed;
@@ -449,6 +450,9 @@ h3 {
 				    }
 				    .active {
 				    	border-bottom: 3px solid $gray3;
+				    	&:hover a { 
+							color: $mediumTurquoise;
+				    	}
 				    }
 				}
 			}

@@ -63,7 +63,8 @@
         .header .wrapper nav .navigation .active a {
           text-decoration: none;
           background: #f8f9fb;
-          color: #49cbcd; }
+          color: #49cbcd;
+          cursor: default; }
     .header .wrapper nav .menu {
       display: none; }
   .main .banner .left,
