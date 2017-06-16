@@ -53,7 +53,7 @@ $(document).ready(function(){
 
         if (hash === '#') { return; }
 
-        if ($(window.width() > 960)) {
+        if ($(window).width() > 960) {
         	navElems.removeClass('active');
         	jThis.closest('li').addClass('active');	
         }
