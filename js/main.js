@@ -1,20 +1,24 @@
 $(document).ready(function(){
-	$('#slider').slick({
-			cssEase: 'linear',
-			dots: false,
-			fade: true,
-			infinite: true,
-			slidesToScroll: 1,
-			slidesToShow: 1,
-			speed: 300,
-			swipeToSlide: true,
-			nextArrow: $('.banner button.right'),
-			prevArrow: $('.banner button.left'),
-		});
-  	$('.img-scale').imageScale({
-		rescaleOnResize: true,
-		align: 'center'
+	var slider = $('#slider');
+	slider.slick({
+		cssEase: 'linear',
+		dots: false,
+		fade: true,
+		infinite: true,
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		speed: 300,
+		swipeToSlide: true,
+		nextArrow: $('.banner button.right'),
+		prevArrow: $('.banner button.left'),
 	});
+	slider.on('init', function() {
+		$('.img-scale').imageScale({
+			rescaleOnResize: true,
+			align: 'center'
+		});	
+	});
+  	
 	$('#active-elem').hover(
         function(){ 
             $(this).find('.btn-gray').toggleClass('.active');
