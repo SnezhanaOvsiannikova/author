@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	var slider = $('#slider');
+	var anchors = $('.navigation a[href^="#"]');
+
 	slider.on('init', function() {
 		setTimeout(function() {
 			$('.img-scale').imageScale({
@@ -41,7 +43,7 @@ $(document).ready(function(){
 			});
 		});
 	}());
-	$('a[href^="#"]').click(function(e){
+	anchors.click(function(e){
 		var jThis = $(this); 
         var hash = jThis.attr('href');
         var target;
@@ -50,6 +52,7 @@ $(document).ready(function(){
 
         if (hash === '#') { return; }
 
+        anchors.removeClass('active');
         jThis.addClass('active');
     	target = $(hash);
  

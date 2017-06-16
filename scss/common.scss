@@ -424,21 +424,22 @@ h3 {
 					border-bottom: 2px solid $gray1;
 					a {
 						text-decoration: none;
+						color: $white1;
+						display: block;
+						padding: 10px 0;
 						&:hover {
 							background: $mediumTurquoise;
 							color:  $gray3;
 						}
-					}
-					a, span {
-						color: $white1;
-						display: block;
-						padding: 10px  0;
 					}
 					span {
 						text-decoration: underline;
 						background: $mediumTurquoise;
 						color:  $gray3;
 					}
+				}
+				.active a {
+					
 				}
 				&.fixed-menu {
 					position: fixed;
