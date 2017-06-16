@@ -440,6 +440,16 @@ h3 {
 						color:  $gray3;
 					}
 				}
+				&.fixed-menu {
+					position: fixed;
+					top: 0;
+				    right: 0;
+				    left: 0;
+				    background: rgba(73, 203, 205, .9);
+				    & li a:hover {
+				    	color: $white1;
+				    } 
+				}
 			}
 		}
 	}

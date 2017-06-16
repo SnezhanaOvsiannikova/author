@@ -51,5 +51,21 @@ $(document).ready(function(){
             //window.location.hash = hash;
     	});
 	});
+	(function () {
+
+		var menuEl = $('#menu');
+
+		 $(window).scroll(function(){
+
+            if ( $(this).scrollTop() > 100 && menuEl.hasClass('navigation') ){
+                menuEl.addClass('fixed-menu');
+            } else if($(this).scrollTop() <= 100 && menuEl.hasClass('fixed-menu')) {
+                menuEl.removeClass('fixed-menu');
+            }
+        });
+
+
+	}());
 });
+
 
