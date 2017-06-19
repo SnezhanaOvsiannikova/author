@@ -20,7 +20,6 @@ body {
 h3 {
 	font-size: 42px;
 	line-height: 46px;
-	text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
 }
 .heading-white {
 	color: $white1;
@@ -480,6 +479,7 @@ h3 {
 				margin-bottom: 28px;
 				line-height: 50px;
 				padding: 0 10px;
+				text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
 			}
 			p {
 				font-size: 20px;
