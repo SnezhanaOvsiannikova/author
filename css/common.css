@@ -25,19 +25,6 @@ h3 {
   overflow: hidden;
   position: relative;
   z-index: 1; }
-  #slider .slick-slide {
-    float: left;
-    height: 100%;
-    position: relative; }
-    #slider .slick-slide img {
-      display: block;
-      height: 100% !important;
-      max-width: none;
-      position: relative !important;
-      width: auto;
-      transform: translate3d(0, 0, 0);
-      left: 50%;
-      top: 0 !important; }
   #slider .slick-track {
     display: block;
     left: 0;
