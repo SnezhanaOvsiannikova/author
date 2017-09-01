@@ -65,9 +65,19 @@
 					&.fixed-menu {
 						position: fixed;
 						top: 0;
-					    right: 0;
-					    left: 0;
-					    background: rgba(73, 203, 205, .9);
+					    right: 22%;
+					    left: 22%;
+					    z-index: 1;
+					    &:after {
+					    	content: "";
+					    	position: absolute;
+					    	background: rgba(73, 203, 205, .9);
+					    	top: 0;
+					    	left: -100%;
+					    	right: -100%;
+					    	bottom: 0;
+					    	z-index: -1;
+					    }
 					    li a:hover {
 					    	color: $white1;
 					    }
